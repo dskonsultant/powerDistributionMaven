@@ -5,8 +5,8 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
-  	<module>administrationWeb</module>
-  	<module>BusinessService</module>
-  	<module>commonService</module>
+  	<module>AdministrationWebLayer</module>
+  	<module>BusinessServiceLayer</module>
+  	<module>CommonServiceLayer</module>
   </modules>
 </project>
