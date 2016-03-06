@@ -6,7 +6,7 @@ import com.dskonsultants.model.User;
  
 public interface UserService {
  
-    public void saveUserDetails(User p);
+    public void saveUserDetails(User p) throws Exception;
      
     public List<User> getUserDetails();
      

@@ -4,18 +4,21 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.dskonsultants.dao.UserDAO;
 import com.dskonsultants.model.User;
 import com.dskonsultants.service.UserService;
  
-@Component	
+@Service
 public class UserServiceImpl implements UserService{
 	
 	@Autowired
 	protected UserDAO userDao;
-
-	public void saveUserDetails(User person) {
+	
+	@Transactional
+	public void saveUserDetails(User person) throws Exception{
 		
 	      userDao.save(person);
 	      System.out.println("Person::"+person);

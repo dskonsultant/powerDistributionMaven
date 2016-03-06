@@ -57,6 +57,18 @@
 			<artifactId>spring-orm</artifactId>
 			<version>4.0.4.RELEASE</version>
 		</dependency>
+		
+			<!-- Log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-pool</groupId>
+			<artifactId>commons-pool</artifactId>
+			<version>1.6</version>
+		</dependency>
 	
 	</dependencies>
 
