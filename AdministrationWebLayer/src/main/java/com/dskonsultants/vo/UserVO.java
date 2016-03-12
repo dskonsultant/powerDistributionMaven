@@ -1,7 +1,7 @@
 package com.dskonsultants.vo;
 
 
-public class UserForm
+public class UserVO
 {
 		private String username;
 

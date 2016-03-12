@@ -6,11 +6,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import com.dskonsultants.common.baseDTO.BaseDTO;
+
  
 
 @Entity
 @Table(name="Person")
-public class User {
+public class User extends BaseDTO{
  
     @Id
     @Column(name="id")
