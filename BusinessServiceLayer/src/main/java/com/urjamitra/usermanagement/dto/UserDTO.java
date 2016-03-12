@@ -1,6 +1,10 @@
 package com.urjamitra.usermanagement.dto;
 
+import java.util.List;
+
 import com.dskonsultants.common.base.dto.BaseDTO;
+import com.urjamitra.role.dto.RoleDTO;
+import com.urjamitra.village.dto.VillageDTO;
 
 public class UserDTO extends BaseDTO {
 
@@ -12,8 +16,8 @@ public class UserDTO extends BaseDTO {
 	boolean lockedUser;
 	String lastAccessDateTime;
 
-	// List<VillageDTO> villageDTOs
-	// RoleDTO roleDTO
+	List<VillageDTO> villageDTOs;
+	RoleDTO roleDTO;
 	// make village DTO
 	// make role DTO
 	// make the DAO interface
