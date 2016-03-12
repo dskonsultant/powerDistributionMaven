@@ -18,12 +18,9 @@ public class UserDTO extends BaseDTO {
 
 	List<VillageDTO> villageDTOs;
 	RoleDTO roleDTO;
-	// make village DTO
-	// make role DTO
-	// make the DAO interface
-	// make the DAO class 
-	// make the SMS DTO
-	// Make the email DTO
+
+	// make the SMS DTO x
+	// Make the email DTO x
 	// Make the Email DAO impl - auditEmail
 	// Make the SMS DAO and impl - auditSMS
 	

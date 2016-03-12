@@ -1,7 +1,16 @@
 package com.urjamitra.usermanagement.dao;
 
-import com.dskonsultants.dao.BaseDAO;
+import java.util.List;
 
-public interface UserDAO extends BaseDAO<T, PK> {
+import com.dskonsultants.dao.BaseDAO;
+import com.urjamitra.usermanagement.dto.UserDTO;
+
+public interface UserDAO{
+	
+	public UserDTO createUser(UserDTO userDTO); // throws Database Exception , Validation Exception
+	public UserDTO updateUser(UserDTO userDTO); 
+	public UserDTO deleteUser(UserDTO userDTO);
+	public UserDTO searchUser(UserDTO userDTO);
+	public List<UserDTO> searchUsers(List<UserDTO> userDTOs)
 
 }

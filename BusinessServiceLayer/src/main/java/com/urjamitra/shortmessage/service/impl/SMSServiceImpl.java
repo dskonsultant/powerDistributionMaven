@@ -1,6 +1,6 @@
-package com.urjamitra.sms.serviceimpl;
+package com.urjamitra.shortmessage.service.impl;
 
-import com.urjamitra.sms.service.SMSService;
+import com.urjamitra.shortmessage.service.SMSService;
 
 public class SMSServiceImpl implements SMSService {
 

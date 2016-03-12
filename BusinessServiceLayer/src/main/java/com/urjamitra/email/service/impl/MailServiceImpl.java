@@ -1,4 +1,4 @@
-package com.urjamitra.email.serviceimpl;
+package com.urjamitra.email.service.impl;
 
 import com.urjamitra.email.service.MailService;
 

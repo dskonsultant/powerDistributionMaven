@@ -1,4 +1,4 @@
-package com.urjamitra.sms.service;
+package com.urjamitra.shortmessage.service;
 
 public interface SMSService {
 	
