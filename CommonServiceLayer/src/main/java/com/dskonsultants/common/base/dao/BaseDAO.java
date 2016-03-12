@@ -1,4 +1,4 @@
-package com.dskonsultants.common.baseDAO;
+package com.dskonsultants.common.base.dao;
 
 import java.io.Serializable;
 import java.util.List;

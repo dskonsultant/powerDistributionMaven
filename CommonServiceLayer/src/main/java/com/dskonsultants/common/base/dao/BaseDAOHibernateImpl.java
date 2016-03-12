@@ -1,4 +1,4 @@
-package com.dskonsultants.common.baseDAO;
+package com.dskonsultants.common.base.dao;
 
 import java.io.Serializable;
 import java.sql.CallableStatement;
@@ -26,7 +26,7 @@ import org.hibernate.impl.SessionImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
-import com.dskonsultants.common.baseDAO.BaseDAO;
+import com.dskonsultants.common.base.dao.BaseDAO;
 
 
 public abstract class BaseDAOHibernateImpl<T, ID extends Serializable>
