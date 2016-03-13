@@ -15,7 +15,7 @@ public class UserManagementServiceImpl implements UserManagementService {
 	UserDAO userDAO;
 	
 	@Override
-	public UserDTO addUser(UserDTO userDTO) throws Exception {
+	public UserDTO addUser(UserDTO userDTO) {
 		// TODO Auto-generated method stub
 		return null;
 	}

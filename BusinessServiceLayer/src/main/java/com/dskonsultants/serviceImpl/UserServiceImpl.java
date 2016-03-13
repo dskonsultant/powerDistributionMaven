@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.dskonsultants.common.exception.DatabaseException;
 import com.dskonsultants.dao.UserDAO;
 import com.dskonsultants.model.User;
 import com.dskonsultants.service.UserService;

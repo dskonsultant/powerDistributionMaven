@@ -1,25 +1,23 @@
 package com.urjamitra.usermanagement.service;
 
+import com.dskonsultants.common.exception.GenericException;
 import com.urjamitra.usermanagement.dto.UserDTO;
+import com.urjamitra.village.dto.VillageDTO;
 
 public interface UserManagementService {
 
-	public UserDTO addUser(UserDTO userDTO) throws Exception; /*
-															 * TODO : It should
-															 * throw an generic
-															 * exception
-															 */
+	public UserDTO addUser(UserDTO userDTO) throws GenericException;
 
-	public UserDTO editUser(UserDTO userDTO);
+	public UserDTO editUser(UserDTO userDTO) throws GenericException;
 
-	public UserDTO deleteUser(UserDTO userDTO);
+	public UserDTO deleteUser(UserDTO userDTO) throws GenericException;
 
-	public UserDTO getUserById(UserDTO userDTO);
+	public UserDTO getUserById(UserDTO userDTO) throws GenericException;
 
-	public UserDTO getUserByName(UserDTO userDTO);
+	public UserDTO getUserByName(UserDTO userDTO) throws GenericException;
 
-	public UserDTO getUserByVillageId(int villageId); // Village DTO.
+	public UserDTO getUserByVillageId(VillageDTO villageDTO) throws GenericException; 
 
-	public UserDTO assignRole(UserDTO userDTO);
+	public UserDTO assignRole(UserDTO userDTO) throws GenericException;
 
 }
