@@ -6,6 +6,6 @@ import com.urjamitra.shortmessage.dto.ShortMessageDTO;
 public interface ShortMessageService {
 	
 	
-	public boolean sendSMS(ShortMessageDTO shortMessageDTO) throws GenericException; //SMSDTO
+	public boolean sendSMS(ShortMessageDTO shortMessageDTO) throws GenericException; 
 
 }
