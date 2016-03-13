@@ -1,10 +1,19 @@
 package com.urjamitra.usermanagement.service.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.urjamitra.usermanagement.dao.UserDAO;
 import com.urjamitra.usermanagement.dto.UserDTO;
 import com.urjamitra.usermanagement.service.UserManagementService;
 
+@Service
 public class UserManagementServiceImpl implements UserManagementService {
 
+	
+	@Autowired
+	UserDAO userDAO;
+	
 	@Override
 	public UserDTO addUser(UserDTO userDTO) throws Exception {
 		// TODO Auto-generated method stub

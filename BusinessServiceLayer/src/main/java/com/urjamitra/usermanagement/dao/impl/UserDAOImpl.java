@@ -1,5 +1,6 @@
 package com.urjamitra.usermanagement.dao.impl;
 
+import java.io.Serializable;
 import java.util.List;
 
 import com.urjamitra.usermanagement.dao.UserDAO;
@@ -33,6 +34,30 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public List<UserDTO> searchUsers(List<UserDTO> userDTOs) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object save(Object newInstance) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean remove(Object persistentObject) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Object findById(Serializable id, boolean lock) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List findAll() throws Exception {
 		// TODO Auto-generated method stub
 		return null;
 	}
