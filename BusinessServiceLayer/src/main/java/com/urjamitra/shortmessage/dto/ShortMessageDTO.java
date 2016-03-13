@@ -4,6 +4,10 @@ import com.dskonsultants.common.base.dto.BaseDTO;
 
 public class ShortMessageDTO extends BaseDTO {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String shortMessageID;
 	private String shortMessageType;
 	private String shortMessageNumber;
