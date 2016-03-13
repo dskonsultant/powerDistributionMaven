@@ -2,8 +2,6 @@ package com.urjamitra.usermanagement.dao;
 
 import java.util.List;
 
-
-
 import com.dskonsultants.common.baseDAO.BaseDAO;
 import com.urjamitra.usermanagement.dto.UserDTO;
 

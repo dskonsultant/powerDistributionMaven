@@ -1,7 +1,7 @@
-package com.dskonsultants.vo;
+package com.dskonsultants.viewDto;
 
 
-public class UserVO
+public class UserViewDto
 {
 		private String username;
 
