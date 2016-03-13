@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.dskonsultants.model.User;
 import com.dskonsultants.service.UserService;
-import com.dskonsultants.vo.UserVO;
+import com.dskonsultants.viewDto.UserViewDto;
 import com.dskonsultants.common.exception.BusinessException;
 import com.dskonsultants.common.logging.AppLogger;
  
@@ -38,14 +38,14 @@ public class UserController {
 			 throw new IOException();
 		}
 		ModelAndView mv = new ModelAndView("addUser");
-		UserVO userBean = new UserVO();
+		UserViewDto userBean = new UserViewDto();
         mv.addObject("userBean", userBean);
 
 		return mv;
 	}
 	
 	@RequestMapping(value="/addUser",method=RequestMethod.POST)
-	public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("userBean")UserVO userBean) throws Exception
+	public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("userBean")UserViewDto userBean) throws Exception
 	{
 		AppLogger.info ("BaseController.class","CONTROLLER BLOCK - add user");
 		
