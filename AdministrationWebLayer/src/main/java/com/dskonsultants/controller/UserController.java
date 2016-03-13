@@ -17,11 +17,12 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.dskonsultants.model.User;
 import com.dskonsultants.service.UserService;
-import com.dskonsultants.vo.UserForm;
+import com.dskonsultants.vo.UserVO;
+import com.dskonsultants.common.exception.BusinessException;
+import com.dskonsultants.common.logging.AppLogger;
  
 @Controller
-public class BaseController {
-	private static final Logger logger = Logger.getLogger(BaseController.class);
+public class UserController {
 	
 	String message = "";
 	
@@ -31,22 +32,23 @@ public class BaseController {
 	@RequestMapping("/init")
 	public ModelAndView showMessage(
 			@RequestParam(value = "name", required = false, defaultValue = "Pay") String name) throws Exception {
-		logger.info("CONTROLLER BLOCK - initialize");
+		AppLogger.info ("BaseController.class","CONTROLLER BLOCK - initialize");
 		
 		if(name.equals("error")){
 			 throw new IOException();
 		}
 		ModelAndView mv = new ModelAndView("addUser");
-		UserForm userBean = new UserForm();
+		UserVO userBean = new UserVO();
         mv.addObject("userBean", userBean);
 
 		return mv;
 	}
 	
 	@RequestMapping(value="/addUser",method=RequestMethod.POST)
-	public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("userBean")UserForm userBean) throws Exception
+	public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("userBean")UserVO userBean) throws Exception
 	{
-		logger.info("CONTROLLER BLOCK - add User");
+		AppLogger.info ("BaseController.class","CONTROLLER BLOCK - add user");
+		
 		try
 		{
 				  User person = new User();
