@@ -8,21 +8,17 @@ import com.urjamitra.village.dto.VillageDTO;
 
 public class UserDTO extends BaseDTO {
 
-	String firstName;
-	String lastName;
-	String emailAddress;
-	String contactNumber;
-	boolean activeUser;
-	boolean lockedUser;
-	String lastAccessDateTime;
+	private String firstName;
+	private String lastName;
+	private String emailAddress;
+	private String contactNumber;
+	private boolean activeUser;
+	private boolean lockedUser;
+	private String lastAccessDateTime;
 
-	List<VillageDTO> villageDTOs;
-	RoleDTO roleDTO;
+	private List<VillageDTO> villageDTOs;
+	private RoleDTO roleDTO;
 
-	// make the SMS DTO x
-	// Make the email DTO x
-	// Make the Email DAO impl - auditEmail
-	// Make the SMS DAO and impl - auditSMS
 	
 	
 	
