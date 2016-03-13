@@ -5,6 +5,6 @@ import com.urjamitra.email.dto.EmailDTO;
 
 public interface EmailService {
 
-	public boolean sendMail(EmailDTO emailDTO) throws GenericException; // MailDTO
+	public boolean sendMail(EmailDTO emailDTO) throws GenericException; 
 
 }
