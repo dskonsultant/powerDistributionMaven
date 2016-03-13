@@ -3,9 +3,11 @@ package com.urjamitra.usermanagement.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.dskonsultants.common.exception.GenericException;
 import com.urjamitra.usermanagement.dao.UserDAO;
 import com.urjamitra.usermanagement.dto.UserDTO;
 import com.urjamitra.usermanagement.service.UserManagementService;
+import com.urjamitra.village.dto.VillageDTO;
 
 @Service
 public class UserManagementServiceImpl implements UserManagementService {
@@ -44,14 +46,16 @@ public class UserManagementServiceImpl implements UserManagementService {
 		return null;
 	}
 
+
 	@Override
-	public UserDTO getUserByVillageId(int villageId) {
+	public UserDTO assignRole(UserDTO userDTO) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public UserDTO assignRole(UserDTO userDTO) {
+	public UserDTO getUserByVillageId(VillageDTO villageDTO)
+			throws GenericException {
 		// TODO Auto-generated method stub
 		return null;
 	}
