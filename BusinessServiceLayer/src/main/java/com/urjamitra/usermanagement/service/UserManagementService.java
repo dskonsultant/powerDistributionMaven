@@ -17,7 +17,7 @@ public interface UserManagementService {
 
 	public UserDTO getUserByName(UserDTO userDTO) throws GenericException;
 
-	public UserDTO getUserByCluster(ClusterDTO clusterDTO) throws GenericException; 
+	public UserDTO getUserByCluster(UserDTO userDTO) throws GenericException; 
 
 	public UserDTO assignRole(UserDTO userDTO) throws GenericException;
 

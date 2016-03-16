@@ -57,7 +57,7 @@ public class UserManagementServiceImpl implements UserManagementService {
 	
 
 	@Override
-	public UserDTO getUserByCluster(ClusterDTO clusterDTO)
+	public UserDTO getUserByCluster(UserDTO userDTO)
 			throws GenericException {
 		// TODO Auto-generated method stub
 		return null;
