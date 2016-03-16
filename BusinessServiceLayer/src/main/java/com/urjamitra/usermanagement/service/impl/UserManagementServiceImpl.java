@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.dskonsultants.common.exception.GenericException;
+import com.urjamitra.clustermanagement.dto.ClusterDTO;
 import com.urjamitra.usermanagement.dao.UserDAO;
 import com.urjamitra.usermanagement.dto.UserDTO;
 import com.urjamitra.usermanagement.service.UserManagementService;
@@ -53,8 +54,10 @@ public class UserManagementServiceImpl implements UserManagementService {
 		return null;
 	}
 
+	
+
 	@Override
-	public UserDTO getUserByVillageId(VillageDTO villageDTO)
+	public UserDTO getUserByCluster(ClusterDTO clusterDTO)
 			throws GenericException {
 		// TODO Auto-generated method stub
 		return null;

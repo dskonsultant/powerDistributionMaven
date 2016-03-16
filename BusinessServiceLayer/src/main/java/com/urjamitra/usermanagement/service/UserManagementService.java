@@ -1,6 +1,7 @@
 package com.urjamitra.usermanagement.service;
 
 import com.dskonsultants.common.exception.GenericException;
+import com.urjamitra.clustermanagement.dto.ClusterDTO;
 import com.urjamitra.usermanagement.dto.UserDTO;
 import com.urjamitra.village.dto.VillageDTO;
 
@@ -16,7 +17,7 @@ public interface UserManagementService {
 
 	public UserDTO getUserByName(UserDTO userDTO) throws GenericException;
 
-	public UserDTO getUserByVillageId(VillageDTO villageDTO) throws GenericException; 
+	public UserDTO getUserByCluster(ClusterDTO clusterDTO) throws GenericException; 
 
 	public UserDTO assignRole(UserDTO userDTO) throws GenericException;
 
