@@ -14,5 +14,7 @@ public interface UserDAO{
 	public UserDTO deleteUser(UserDTO userDTO) throws DatabaseException;
 	public UserDTO searchUser(UserDTO userDTO) throws DatabaseException;
 	public List<UserDTO> searchUsers(List<UserDTO> userDTOs) throws DatabaseException;
-
+	public List<UserDTO> searchAllUsers(List<UserDTO> userDTOs) throws DatabaseException;
+	public List<UserDTO> searchByCluster(List<UserDTO> userDTOs) throws DatabaseException;
+	
 }
