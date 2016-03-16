@@ -17,11 +17,16 @@ import javax.persistence.Table;
 @Table(name="USER_MASTER")
 public class UserDO implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	@Id
 	@Column(name="USER_ID")
 	@GeneratedValue(strategy=GenerationType.AUTO,generator="my_seq_gen")
 	@SequenceGenerator(name="my_seq_gen",sequenceName="USER_ID_SEQ")
-	private long userid;
+	private long userId;
 	
 	@Column(name="USER_FIRST_NAME")
 	private String userFirstName;
@@ -36,10 +41,10 @@ public class UserDO implements Serializable{
 	private String userPhoneNumber;
 	
 	@Column(name="USER_HANDSET_DETAILS_ID")
-	private long userHandsetDetails;
+	private long userHandsetDetailsId;
 	
 	@Column(name="USER_ROLE_ID")
-	private String userRoleId;
+	private long userRoleId;
 	
 	@Column(name="CREATED_BY")
 	private String createdBy;
@@ -54,11 +59,11 @@ public class UserDO implements Serializable{
 	private Date updatedDate;
 
 	public long getUserid() {
-		return userid;
+		return userId;
 	}
 
-	public void setUserid(long userid) {
-		this.userid = userid;
+	public void setUserid(long userId) {
+		this.userId = userId;
 	}
 
 	public String getUserFirstName() {
@@ -93,19 +98,19 @@ public class UserDO implements Serializable{
 		this.userPhoneNumber = userPhoneNumber;
 	}
 
-	public long getUserHandsetDetails() {
-		return userHandsetDetails;
+	public long getUserHandsetDetailsId() {
+		return userHandsetDetailsId;
 	}
 
-	public void setUserHandsetDetails(long userHandsetDetails) {
-		this.userHandsetDetails = userHandsetDetails;
+	public void setUserHandsetDetails(long userHandsetDetailsId) {
+		this.userHandsetDetailsId = userHandsetDetailsId;
 	}
 
-	public String getUserRoleId() {
+	public long getUserRoleId() {
 		return userRoleId;
 	}
 
-	public void setUserRoleId(String userRoleId) {
+	public void setUserRoleId(long userRoleId) {
 		this.userRoleId = userRoleId;
 	}
 
