@@ -7,7 +7,7 @@ import java.util.List;
 import com.dskonsultants.common.exception.DatabaseException;
 import com.urjamitra.usermanagement.dto.UserDTO;
 
-public interface UserDAO{
+public interface UserDAO {
 	
 	public UserDTO createUser(UserDTO userDTO) throws DatabaseException; // throws Database Exception , Validation Exception
 	public UserDTO updateUser(UserDTO userDTO) throws DatabaseException; 

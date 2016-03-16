@@ -46,6 +46,9 @@ public class UserDO implements Serializable{
 	@Column(name="USER_ROLE_ID")
 	private long userRoleId;
 	
+	@Column(name="LAST_ACCESS_DATE_TIME")
+	private Date lastAccessDateTime;
+	
 	@Column(name="CREATED_BY")
 	private String createdBy;
 	
@@ -102,7 +105,7 @@ public class UserDO implements Serializable{
 		return userHandsetDetailsId;
 	}
 
-	public void setUserHandsetDetails(long userHandsetDetailsId) {
+	public void setUserHandsetDetailsId(long userHandsetDetailsId) {
 		this.userHandsetDetailsId = userHandsetDetailsId;
 	}
 
@@ -144,6 +147,14 @@ public class UserDO implements Serializable{
 
 	public void setUpdatedDate(Date updatedDate) {
 		this.updatedDate = updatedDate;
+	}
+
+	public Date getLastAccessDateTime() {
+		return lastAccessDateTime;
+	}
+
+	public void setLastAccessDateTime(Date lastAccessDateTime) {
+		this.lastAccessDateTime = lastAccessDateTime;
 	}
 	
 	
