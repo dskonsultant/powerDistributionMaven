@@ -3,6 +3,7 @@ package com.urjamitra.usermanagement.dao.impl;
 import java.io.Serializable;
 import java.util.List;
 
+import com.dskonsultants.common.exception.DatabaseException;
 import com.urjamitra.usermanagement.dao.UserDAO;
 import com.urjamitra.usermanagement.dto.UserDTO;
 
@@ -34,6 +35,20 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public List<UserDTO> searchUsers(List<UserDTO> userDTOs) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDTO> searchAllUsers(List<UserDTO> userDTOs)
+			throws DatabaseException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDTO> searchByCluster(List<UserDTO> userDTOs)
+			throws DatabaseException {
 		// TODO Auto-generated method stub
 		return null;
 	}
