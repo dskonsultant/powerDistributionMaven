@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.dskonsultants.model.User;
 import com.dskonsultants.service.UserService;
-import com.dskonsultants.viewDto.UserViewDto;
+import com.dskonsultants.view.dto.UserViewDto;
 import com.dskonsultants.common.exception.BusinessException;
 import com.dskonsultants.common.logging.AppLogger;
  

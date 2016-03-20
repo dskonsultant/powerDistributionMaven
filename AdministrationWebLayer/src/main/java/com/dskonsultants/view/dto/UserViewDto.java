@@ -1,4 +1,4 @@
-package com.dskonsultants.viewDto;
+package com.dskonsultants.view.dto;
 
 
 public class UserViewDto
