@@ -10,9 +10,6 @@ public class UserManagementViewDTO {
 	private String userName;
 	private String contactNumber;
 	private String emailAddress;
-	private List<String> villageName;
-	private List<Integer> villageId;
-	private List<Integer> wardNumber;
 	private int errorId;
 	private String errorName;
 	private String errorDescrption;
