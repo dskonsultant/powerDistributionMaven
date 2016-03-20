@@ -21,7 +21,6 @@ public class UserDAOImpl extends BaseDAOHibernateImpl<UserDO,String> implements 
 			userDO.setUserFirstName(userDTO.getFirstName());
 			userDO.setUserLastName(userDTO.getLastName());
 			userDO.setLastAccessDateTime(userDTO.getLastAccessDateTime());
-			
 			userDO = saveAndCommit(userDO);
 			
 			
